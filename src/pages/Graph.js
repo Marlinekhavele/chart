@@ -842,6 +842,7 @@ function Graph() {
       type: "datetime",
       categories: xaxisData,
     },
+    
     tooltip: {
       x: {
         format: "dd/MM/yy",

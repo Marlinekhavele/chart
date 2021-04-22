@@ -790,15 +790,17 @@ function Graph() {
     dataLabels: {
       enabled: false,
     },
+  colors: ["#FF1654"],
+
     stroke: {
       curve: "smooth",
     },
     markers: {
       size: [4,7],
-      colors:'#FF0000',
+      colors:["#FF1654"],
       fillColor: '#e3e3e3',
-      strokeColors: '	#FF0000',
-      strokeWidth: 2,
+      strokeColors: '#FF1654',
+      strokeWidth:[4, 4],
       strokeOpacity: 0.9,
       strokeDashArray: 0,
       fillOpacity: 1,
@@ -807,14 +809,35 @@ function Graph() {
       radius: 2,
       offsetX: 0,
       offsetY: 0,
-      onClick: undefined,
-      onDblClick: undefined,
       showNullDataPoints: true,
       hover: {
-        size: undefined,
         sizeOffset: 3
       }
   },
+  yaxis: [
+    {
+      axisTicks: {
+        show: true
+      },
+      axisBorder: {
+        show: true,
+        color: "#808080"
+      },
+      labels: {
+        style: {
+          colors: "#808080"
+        }
+      },
+      title: {
+        text: "Number of stars",
+        style: {
+          color: "#808080"
+        }
+      }
+    },
+ 
+  ],
+
     xaxis: {
       type: "datetime",
       categories: xaxisData,

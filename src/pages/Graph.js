@@ -782,7 +782,7 @@ const yaxisData = DATA[0]["data"].map( record => record["y"])
 function Graph() {
   const series = [
     {
-      name: "Cases",
+      name: "Y",
       data: yaxisData
     }
   ];
@@ -793,6 +793,28 @@ function Graph() {
     stroke: {
       curve: "smooth",
     },
+    markers: {
+      size: [4,7],
+      colors:'#FF0000',
+      fillColor: '#e3e3e3',
+      strokeColors: '	#FF0000',
+      strokeWidth: 2,
+      strokeOpacity: 0.9,
+      strokeDashArray: 0,
+      fillOpacity: 1,
+      discrete: [],
+      shape: "circle",
+      radius: 2,
+      offsetX: 0,
+      offsetY: 0,
+      onClick: undefined,
+      onDblClick: undefined,
+      showNullDataPoints: true,
+      hover: {
+        size: undefined,
+        sizeOffset: 3
+      }
+  },
     xaxis: {
       type: "datetime",
       categories: xaxisData,
